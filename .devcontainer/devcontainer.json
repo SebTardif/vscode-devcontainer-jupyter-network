@@ -17,7 +17,7 @@
 	},
 	"mounts": [
 		"source=${localWorkspaceFolder},target=/home/jovyan/work,type=bind,consistency=cached",
-		"type=bind,source=${localEnv:HOME}/.ssh,target=/home/jovyan/.ssh_from_host,readonly"
+		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/jovyan/.ssh,type=bind,consistency=cached"
 	],
 	// Use base images default CMD.
 	"overrideCommand": false,
