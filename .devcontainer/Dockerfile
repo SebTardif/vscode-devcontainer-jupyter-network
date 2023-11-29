@@ -1,4 +1,4 @@
-FROM quay.io/jupyter/datascience-notebook:x86_64-notebook-7.0.6
+FROM quay.io/jupyter/datascience-notebook:x86_64-python-3.11.6
 
 USER root
 # Generally, Dev Container Features assume that the non-root user (in this case jovyan)
